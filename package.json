@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "nx run-many --target=serve --projects=server,client",
-    "test": "nx run-many --target=test --projects=server,client"
+    "client": "nx run-many --target=serve --projects=client",
+    "server": "nx run-many --target=serve --projects=server",
+    "test": "nx run-many --target=test --projects=client"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.15",
     "@nestjs/common": "9.2.1",
     "@nestjs/core": "9.2.1",
     "@nestjs/platform-express": "9.2.1",
+    "@tanstack/react-query": "^5.32.0",
+    "axios": "^1.6.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router": "^6.3.0",
