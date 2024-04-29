@@ -71,7 +71,7 @@ export function TicketDetails() {
         >
           <MenuItem value={0}>Unassigned</MenuItem>
 
-          {userQuery.data.map((option: User) => (
+          {userQuery.data?.map((option: User) => (
             <MenuItem
               key={option.id}
               value={option.id}
